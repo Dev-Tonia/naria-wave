@@ -2,7 +2,7 @@ export default function CustomButton({ icon, title }) {
   return (
     <button
       type="button"
-      class="btn  d-flex gap-2 align-items-center fw-bolder custom-shadow"
+      className="btn  d-flex gap-2 align-items-center fw-bolder custom-shadow"
     >
       <div
         style={{ width: "20px", height: "20px" }}

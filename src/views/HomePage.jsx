@@ -3,7 +3,7 @@ import AccBalance from "../components/homeUi/AccBalance";
 import HomeHeader from "../components/homeUi/HomeHeader";
 import Products from "../components/homeUi/Products";
 import ActionType from "../components/homeUi/ActionType";
-import Transaction from "../components/homeUi/Transaction";
+import RecentTransaction from "../components/homeUi/RecentTransaction";
 
 export default function Home() {
   return (
@@ -13,7 +13,7 @@ export default function Home() {
       <AccBalance />
       <ActionType />
       <Products />
-      <Transaction />
+      <RecentTransaction />
     </main>
   );
 }

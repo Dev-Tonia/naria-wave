@@ -1,4 +1,4 @@
-import Tiles from "./Tiles";
+import AccActionTiles from "./AccActionTiles";
 
 export default function AccountActions() {
   const actions = ["Spend", "Transactions", "Send"];
@@ -6,7 +6,7 @@ export default function AccountActions() {
     <div className=" container">
       <div className=" mt-3">
         {actions.map((action) => (
-          <Tiles title={action} key={action} />
+          <AccActionTiles title={action} key={action} />
         ))}
       </div>
     </div>

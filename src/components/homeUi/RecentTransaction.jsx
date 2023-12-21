@@ -1,7 +1,7 @@
-import TransactionDate from "./TransactionDate";
-import TransactionTile from "./TransactionTile";
+import TransactionDate from "../atoms/TransactionDate";
+import TransactionTile from "../atoms/TransactionTile";
 
-export default function Transaction() {
+export default function RecentTransaction() {
   const providers = [
     {
       name: "MTN",

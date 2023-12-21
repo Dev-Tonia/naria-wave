@@ -5,7 +5,7 @@ import {
   RiTvFill,
 } from "react-icons/ri";
 import "./home.css";
-import ProductCard from "./ProductCard";
+import ProductCard from "../atoms/ProductCard";
 
 const products = [
   {
@@ -31,7 +31,7 @@ const products = [
 ];
 export default function Products() {
   return (
-    <div className="mt-5 container">
+    <section className="mt-5 container">
       <h5 className=" text-secondary fw-medium">Quick Access</h5>
       <div className="product  ">
         {products.map((product) => (
@@ -44,6 +44,6 @@ export default function Products() {
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 }
