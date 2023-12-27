@@ -15,35 +15,42 @@ export default function Services() {
       title: "Airtime",
       iconName: <RiPhoneFill />,
       iconColor: "orange",
+      path: "airtime",
     },
     {
-      title: "Data",
+      title: "Internet",
       iconName: <RiWifiFill />,
       iconColor: "red",
+      path: "data",
     },
     {
       title: "Tv",
       iconName: <RiTvFill />,
       iconColor: "green",
+      path: "cable",
     },
     {
       title: "Electricity",
       iconName: <RiLightbulbFlashFill />,
       iconColor: "red",
+      path: "electricity",
     },
     {
       title: "Education",
       iconName: <RiBook3Fill />,
       iconColor: "orange",
+      path: "electricity",
     },
     {
       title: "Internet",
       iconName: <RiGlobalFill />,
       iconColor: "orange",
+      path: "electricity",
     },
   ];
+
   return (
-    <div className=" container pt-5">
+    <div className=" custom-container pt-5">
       <h2 className=" fw-medium fs-4">Services</h2>
       <p className=" text-secondary">
         Discover a diverse collection of services meticulously crafted to
@@ -52,11 +59,7 @@ export default function Services() {
       <div className=" services">
         {products.map((product) => (
           <div className=" g-col-3 m-2 custom-shadow" key={product.title}>
-            <ProductCard
-              title={product.title}
-              iconName={product.iconName}
-              iconColor={product.iconColor}
-            />
+            <ProductCard product={product} />
           </div>
         ))}
       </div>

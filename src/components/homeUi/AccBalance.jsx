@@ -4,7 +4,7 @@ import { NigeriaFlag } from "../../utils/icons/icons";
 import { RiMoreFill } from "react-icons/ri";
 export default function AccBalance() {
   return (
-    <div className=" container">
+    <div className=" custom-container">
       <div className=" d-flex gap-2 mt-4  naira ">
         <div className=" icon-wrapper">
           <NigeriaFlag />

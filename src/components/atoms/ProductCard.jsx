@@ -1,17 +1,26 @@
 // eslint-disable-next-line react/prop-types
-export default function ProductCard({ iconName, title, iconColor }) {
+
+import { useNavigate } from "react-router-dom";
+
+export default function ProductCard({ product }) {
+  const navigate = useNavigate();
+  const navigateTo = () => navigate(`/order/${product.path}`);
   return (
-    <div className="icon-box text-center py-4 px-3">
+    <div
+      onClick={navigateTo}
+      className="icon-box text-center py-4 px-3  cursor"
+      style={{ cursor: "pointer" }}
+    >
       <span
         style={{
-          color: iconColor,
+          color: product.iconColor,
           fontSize: "30px",
         }}
       >
-        {iconName}
+        {product.iconName}
       </span>
       <div>
-        <h6>{title}</h6>
+        <h6>{product.title}</h6>
       </div>
     </div>
   );

@@ -26,7 +26,7 @@ export default function RecentTransaction() {
   ];
   return (
     <div className=" mt-3">
-      <div className="container">
+      <div className="custom-container">
         <p className=" fw-medium">Recent Transaction Details</p>
       </div>
       <TransactionDate />

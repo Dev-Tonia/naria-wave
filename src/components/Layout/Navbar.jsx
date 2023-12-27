@@ -10,30 +10,12 @@ import NavbarItem from "./NavbarItem";
 export default function Navbar() {
   return (
     <nav className=" custom-shadow bg-white fixed-top ">
-      <div className=" container">
-        <div className=" d-flex align-items-center justify-content-between">
-          <h1 className=" navbar-brand text-warning fs-4 fst-italic fw-medium">
-            Naira Wave
-          </h1>
-          <div className=" d-flex align-items-center">
-            <NavbarItem icon={<RiHome2Line />} title={"Home"} path={"/"} />
-            <NavbarItem
-              icon={<RiBriefcaseLine />}
-              title={"Services"}
-              path={"/services"}
-            />
-            <NavbarItem
-              icon={<RiFolderZipLine />}
-              title={"Transaction"}
-              path={"/transactions"}
-            />
-            <NavbarItem
-              icon={<RiUserLine />}
-              title={"Profile"}
-              path={"/profile"}
-            />
-          </div>
-          <div></div>
+      <div className=" custom-container">
+        <div className=" d-flex align-items-center justify-content-between ">
+          <NavbarItem icon={<RiHome2Line />} path={"/"} />
+          <NavbarItem icon={<RiBriefcaseLine />} path={"/services"} />
+          <NavbarItem icon={<RiFolderZipLine />} path={"/transactions"} />
+          <NavbarItem icon={<RiUserLine />} path={"/profile"} />
         </div>
       </div>
     </nav>

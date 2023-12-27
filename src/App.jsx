@@ -5,6 +5,8 @@ import HomePage from "./views/HomePage";
 import Services from "./views/Services";
 import Profile from "./views/Profile";
 import TransactionPage from "./views/TransactionPage";
+import AllFormDisplay from "./views/AllFormDisplay";
+
 // Importing react router
 import {
   createBrowserRouter,
@@ -22,6 +24,7 @@ const router = createBrowserRouter(
       <Route path="/profile" element={<Profile />} />
 
       <Route path="/transactions" element={<TransactionPage />} />
+      <Route path="/order/:type" element={<AllFormDisplay />} />
     </Route>
   )
 );

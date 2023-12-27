@@ -3,7 +3,7 @@ import React from "react";
 export default function TransactionTile() {
   return (
     <div className=" bg-white border-bottom">
-      <div className=" container py-3">
+      <div className=" custom-container py-3">
         <div className=" d-flex justify-content-between">
           <div className=" d-flex ">
             <div
