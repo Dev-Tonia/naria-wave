@@ -1,0 +1,15 @@
+@media only screen and (max-width: 470px) {
+  .productCard span {
+    font-size: 30px;
+  }
+  .productCard {
+    width: 75px;
+    height: 75px;
+  }
+  .productCard span {
+    font-size: 20px;
+  }
+  .productCard h6 {
+    font-size: 12px;
+  }
+}

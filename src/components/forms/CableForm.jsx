@@ -156,6 +156,7 @@ export default function CableForm() {
           <CustomButton
             title="Proceed"
             customClass={"bg-warning w-100 text-center justify-content-center"}
+            color={true}
           />
         </div>
       </form>

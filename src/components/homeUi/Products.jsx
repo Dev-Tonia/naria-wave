@@ -45,11 +45,9 @@ export default function Products() {
     <>
       <section className="mt-5 custom-container">
         <h5 className=" text-secondary fw-medium">Quick Access</h5>
-        <div className="product  ">
+        <div className="product overflow-auto ">
           {products.map((product) => (
-            <div className=" g-col-3 m-2 custom-shadow" key={product.title}>
-              <ProductCard product={product} />
-            </div>
+            <ProductCard product={product} key={product.title} />
           ))}
         </div>
       </section>

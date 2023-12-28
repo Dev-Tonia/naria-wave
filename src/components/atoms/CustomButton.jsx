@@ -1,9 +1,9 @@
-export default function CustomButton({ icon, title, customClass }) {
+export default function CustomButton({ icon, title, customClass, color }) {
   // CustomClass is expecting any additional class for the button
   return (
     <button
       type="button"
-      className={` btn  d-flex gap-2 align-items-center fw-bolder custom-shadow ${customClass} `}
+      className={` btn  d-flex gap-2 align-items-center fw-bolder custom-shadow ${customClass} ${color} `}
     >
       {icon && (
         <div
@@ -13,7 +13,7 @@ export default function CustomButton({ icon, title, customClass }) {
           {icon}
         </div>
       )}
-      {customClass ? (
+      {color ? (
         <span className=" text-white  ">{title}</span>
       ) : (
         <span className=" text-warning">{title}</span>

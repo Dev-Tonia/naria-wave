@@ -1,3 +1,11 @@
 .navbar-item a {
   text-decoration: none;
 }
+.navbar-item span {
+  font-size: 20px;
+}
+@media screen and (max-width: 300px) {
+  .navbar-item span {
+    font-size: 18px;
+  }
+}

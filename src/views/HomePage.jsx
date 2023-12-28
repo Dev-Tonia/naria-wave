@@ -8,6 +8,7 @@ import AirTimeForm from "../components/forms/AirTimeForm";
 import Modal from "../components/Modal";
 
 import { useState } from "react";
+import AccountSetUpStatus from "../components/slider/AccountSetUpStatus";
 
 export default function Home() {
   // const [isTabOpen, setIsTabOpen] = useState(true);
@@ -28,6 +29,7 @@ export default function Home() {
         <AccountActions />
         <AccBalance />
         <ActionType />
+        <AccountSetUpStatus />
         <Products />
         <RecentTransaction />
       </main>
