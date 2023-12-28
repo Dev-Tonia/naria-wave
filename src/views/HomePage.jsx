@@ -9,6 +9,7 @@ import Modal from "../components/Modal";
 
 import { useState } from "react";
 import AccountSetUpStatus from "../components/slider/AccountSetUpStatus";
+import Slider from "../components/slider/Slider";
 
 export default function Home() {
   // const [isTabOpen, setIsTabOpen] = useState(true);
@@ -29,7 +30,8 @@ export default function Home() {
         <AccountActions />
         <AccBalance />
         <ActionType />
-        <AccountSetUpStatus />
+        {/* <AccountSetUpStatus /> */}
+        <Slider />
         <Products />
         <RecentTransaction />
       </main>
