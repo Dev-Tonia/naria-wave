@@ -58,7 +58,7 @@ export default function Services() {
       </p>
       <div className=" services">
         {products.map((product) => (
-          <div className=" g-col-3 m-2 custom-shadow" key={product.title}>
+          <div className=" g-col-3 m-2 " key={product.title}>
             <ProductCard product={product} />
           </div>
         ))}
