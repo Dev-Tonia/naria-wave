@@ -50,7 +50,7 @@ export default function Services() {
   ];
 
   return (
-    <div className=" custom-container pt-5">
+    <div className=" custom-container pb-5">
       <h2 className=" fw-medium fs-4">Services</h2>
       <p className=" text-secondary">
         Discover a diverse collection of services meticulously crafted to

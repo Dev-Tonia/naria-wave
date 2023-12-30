@@ -6,7 +6,7 @@ export default function Layout() {
   return (
     <div>
       <Navbar />
-      <main className=" " style={{ marginTop: "78px" }}>
+      <main className=" " style={{ marginTop: "30px", marginBottom: "20px" }}>
         <Outlet />
       </main>
     </div>

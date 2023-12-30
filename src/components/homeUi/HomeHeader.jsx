@@ -1,6 +1,7 @@
 import "./home.css";
 import profileImg from "../../assets/imgs/profile.jpg";
-import { SeeMore } from "../../utils/icons/icons";
+import { BiMessageAltDetail } from "react-icons/bi";
+// import { SeeMore } from "../../utils/icons/icons";
 export default function HomeHeader() {
   return (
     <div className=" custom-container">
@@ -13,10 +14,12 @@ export default function HomeHeader() {
               className=" img-fluid"
             />
           </div>
-          <h3 className=" fw-bolder ps-4">Hi, Tonia</h3>
+          <h3 className=" fw-bolder ps-3">Hi, Tonia</h3>
         </div>
         <div className=" icon ">
-          <SeeMore />
+          <span className=" text-warning fs-1">
+            <BiMessageAltDetail />
+          </span>
         </div>
       </div>
     </div>

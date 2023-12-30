@@ -4,11 +4,6 @@ import HomeHeader from "../components/homeUi/HomeHeader";
 import Products from "../components/homeUi/Products";
 import ActionType from "../components/homeUi/ActionType";
 import RecentTransaction from "../components/homeUi/RecentTransaction";
-import AirTimeForm from "../components/forms/AirTimeForm";
-import Modal from "../components/Modal";
-
-import { useState } from "react";
-import AccountSetUpStatus from "../components/slider/AccountSetUpStatus";
 import Slider from "../components/slider/Slider";
 
 export default function Home() {
@@ -25,7 +20,7 @@ export default function Home() {
 
   return (
     <>
-      <main className="  py-5">
+      <main className=" pb-5">
         <HomeHeader />
         <AccountActions />
         <AccBalance />
