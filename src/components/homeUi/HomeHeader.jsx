@@ -1,6 +1,6 @@
 import "./home.css";
 import profileImg from "../../assets/imgs/profile.jpg";
-import { BiMessageAltDetail } from "react-icons/bi";
+import { BiMessageDetail } from "react-icons/bi";
 // import { SeeMore } from "../../utils/icons/icons";
 export default function HomeHeader() {
   return (
@@ -17,8 +17,8 @@ export default function HomeHeader() {
           <h3 className=" fw-bolder ps-3">Hi, Tonia</h3>
         </div>
         <div className=" icon ">
-          <span className=" text-warning fs-1">
-            <BiMessageAltDetail />
+          <span className=" text-warning fs-1 " style={{ cursor: "pointer" }}>
+            <BiMessageDetail />
           </span>
         </div>
       </div>
