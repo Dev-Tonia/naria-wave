@@ -9,7 +9,7 @@ import NavbarItem from "./NavbarItem";
 
 export default function Navbar() {
   return (
-    <nav className=" custom-shadow bg-white fixed-top ">
+    <nav className=" custom-shadow bg-white fixed-bottom ">
       <div className=" custom-container">
         <div className=" d-flex align-items-center justify-content-between ">
           <NavbarItem icon={<RiHome2Line />} path={"/"} />
