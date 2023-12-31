@@ -7,7 +7,10 @@ import {
   RiLightbulbFlashFill,
   RiBook3Fill,
   RiGlobalFill,
+  RiArrowLeftSLine,
 } from "react-icons/ri";
+import CustomButton from "../components/atoms/CustomButton";
+import GoBackButton from "../components/atoms/GoBackButton";
 
 export default function Services() {
   const products = [
@@ -51,7 +54,11 @@ export default function Services() {
 
   return (
     <div className=" custom-container pb-5">
-      <h2 className=" fw-medium fs-4">Services</h2>
+      <div className=" d-flex  justify-content-between pb-2">
+        <GoBackButton />
+        <h2 className=" fw-medium fs-4">Services</h2>
+        <div></div>
+      </div>
       <p className=" text-secondary">
         Discover a diverse collection of services meticulously crafted to
         streamline and enhance your daily life.

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import CustomInput from "../atoms/CustomInput";
 import CustomSelectElement from "../atoms/CustomSelectElement";
 import CustomButton from "../atoms/CustomButton";
+import GoBackButton from "../atoms/GoBackButton";
 
 export default function CableForm() {
   const [formData, setFormData] = useState({
@@ -104,7 +105,11 @@ export default function CableForm() {
 
   return (
     <div className=" pb-5">
-      <h4 className=" fw-medium">Purchase Your Airtime</h4>
+      <div className=" d-flex  justify-content-between pb-2">
+        <GoBackButton />
+        <h2 className=" fw-medium fs-4">Buy Cable Bundle</h2>
+        <div></div>
+      </div>
       <p className=" text-secondary">
         Balance: <span>200</span>
       </p>
@@ -155,8 +160,8 @@ export default function CableForm() {
         <div className=" ">
           <CustomButton
             title="Proceed"
-            customClass={"bg-warning w-100 text-center justify-content-center"}
-            color={true}
+            customClass={"bg-warning  w-100 text-center justify-content-center"}
+            isColor={true}
           />
         </div>
       </form>

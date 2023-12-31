@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import CustomInput from "../atoms/CustomInput";
 import CustomSelectElement from "../atoms/CustomSelectElement";
 import CustomButton from "../atoms/CustomButton";
+import GoBackButton from "../atoms/GoBackButton";
 
 export default function DataForm() {
   const [formData, setFormData] = useState({
@@ -102,7 +103,11 @@ export default function DataForm() {
 
   return (
     <div>
-      <h4 className=" fw-medium">Purchase Your Airtime</h4>
+      <div className=" d-flex  justify-content-between pb-2">
+        <GoBackButton />
+        <h2 className=" fw-medium fs-4">Buy Data Bundle</h2>
+        <div></div>
+      </div>
       <p className=" text-secondary">
         Balance: <span>200</span>
       </p>
@@ -146,7 +151,7 @@ export default function DataForm() {
           <CustomButton
             title="Proceed"
             customClass={"bg-warning w-100 text-center justify-content-center"}
-            color={true}
+            isColor={true}
           />
         </div>
       </form>

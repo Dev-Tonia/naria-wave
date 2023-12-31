@@ -13,14 +13,5 @@ export default function AllFormDisplay() {
     data: <DataForm />,
     electricity: <ElectricityForm />,
   };
-  return (
-    <div
-      className=" pt-5 custom-container"
-      style={{
-        marginTop: "90px",
-      }}
-    >
-      {forms[type]}
-    </div>
-  );
+  return <div className=" pt-5 custom-container">{forms[type]}</div>;
 }
