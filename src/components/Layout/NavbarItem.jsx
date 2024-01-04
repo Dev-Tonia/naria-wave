@@ -6,9 +6,9 @@ import "../Layout/layout.css";
 export default function NavbarItem({ title, icon, path }) {
   return (
     <div className=" text-center px-3 border-bottom border-2 border-warning py-2  navbar-item">
-      <NavLink to={path} className="text-body ">
+      <NavLink to={path} className="text-body " activeClassName="activeLink">
         <span>{icon}</span>
-        <p className=" mb-0 fs-5 ">{title} </p>
+        <p className=" mb-0 fs-6 text-warning fw-medium title">{title} </p>
       </NavLink>
     </div>
   );

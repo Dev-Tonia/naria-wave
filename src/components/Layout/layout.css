@@ -4,6 +4,13 @@
 .navbar-item span {
   font-size: 20px;
 }
+.title {
+  display: none;
+}
+a.active .title {
+  display: block;
+}
+
 @media screen and (max-width: 300px) {
   .navbar-item span {
     font-size: 18px;
