@@ -15,4 +15,8 @@
   .custom-btn span {
     font-size: 13px;
   }
+  .img-wrapper {
+    width: 80px;
+    height: 80px;
+  }
 }

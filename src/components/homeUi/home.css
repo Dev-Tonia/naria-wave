@@ -15,10 +15,3 @@
 .naira p {
   margin-bottom: 0;
 }
-
-@media only screen and (max-width: 450px) {
-  .img-wrapper {
-    width: 80px;
-    height: 80px;
-  }
-}

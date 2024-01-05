@@ -7,9 +7,7 @@ import {
   RiLightbulbFlashFill,
   RiBook3Fill,
   RiGlobalFill,
-  RiArrowLeftSLine,
 } from "react-icons/ri";
-import CustomButton from "../components/atoms/CustomButton";
 import GoBackButton from "../components/atoms/GoBackButton";
 
 export default function Services() {
